@@ -4,55 +4,59 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Portfolio</title>
+    <title>D R Jones - Personal Blog</title>
 </head>
 <body>
 
 <header>
     <h1>D R Jones</h1>
     <p>Second Year Student at the University of Birmingham</p>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 </header>
 
-<div class="content-wrapper"> <!-- New wrapper div -->
-    <section class="page-links">
-        <h2>Page Links</h2>
-        <ul>
-            <li><a href="blog.html">My Blog</a></li>
-            <li><a href="#">Another Page</a></li>
-            <li><a href="#">Yet Another Page</a></li>
-        </ul>
-    </section>
+<div class="content-wrapper">
+    <main>
+        <article>
+            <h2><a href="#">My First Blog Post</a></h2>
+            <p class="meta">Posted on March 10, 2024 by D R Jones</p>
+            <p>This is a short excerpt from my first blog post. It summarizes the main points and entices readers to click through to the full article.</p>
+            <a class="read-more" href="#">Read More</a>
+        </article>
 
-    <section>
-        <h2>About Me</h2>
-        <p>Hello! I am a university student studying Mathematics and Computer Science. I like reading, competing in CTFs, and video games.</p>
-    </section>
+        <article>
+            <h2><a href="#">Another Blog Post</a></h2>
+            <p class="meta">Posted on March 15, 2024 by D R Jones</p>
+            <p>This post discusses various topics relevant to my studies and experiences.</p>
+            <a class="read-more" href="#">Read More</a>
+        </article>
+    </main>
 
-    <section>
-        <h2>Education</h2>
-        <p>M.Sci. Mathematics and Computer Science<br>
-        University of Birmingham, 2024 - 2028</p>
-    </section>
+    <aside>
+        <section class="page-links">
+            <h2>Page Links</h2>
+            <ul>
+                <li><a href="blog.html">My Blog</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">CV</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming Languages: Python, Java, Haskell, HTML, CSS, JavaScript</li>
-            <li>Frameworks: JHipster, React, Node.js</li>
-            <li>Database Management: PostgreSQL</li>
-            <li>Version Control: Git, GitHub</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Contact</h2>
-        <p>Email: contact@drjoness.uk<br>
-        LinkedIn: <a href="https://www.linkedin.com/in/david-jones-448b2a264/">link</a></p>
-    </section>
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>Hello! I'm D R Jones, a university student. I enjoy mathematics, computer science, and various hobbies.</p>
+        </section>
+    </aside>
 </div>
 
 <footer>
-    <p>&copy; 2026 D R Jones. All rights reserved.</p>
+    <p>&copy; 2026 D R Jones. All rights reserved. | <a href="#">Privacy Policy</a></p>
 </footer>
 
 </body>

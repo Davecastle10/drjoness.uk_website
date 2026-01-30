@@ -2,43 +2,77 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #8daa9d;
+    background-color: #f5f5f5;
 }
 
-header, footer {
+header {
     background: #522b47;
     color: #fff;
     padding: 20px;
     text-align: center;
 }
 
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
 .content-wrapper {
-    display: flex; /* Enable Flexbox layout */
-    align-items: flex-start; /* Align items to the top */
-    padding: 20px;
+    display: flex;
+    margin: 20px;
 }
 
-.page-links {
-    width: 200px; /* Width for the links */
-    /*margin-right: 20px; /* Space between the links and other sections */
-    margin-left: 20px;
+main {
+    flex: 3;
+    margin-right: 20px;
 }
 
-.page-links ul {
-    list-style-type: disc; /* Add bullet points to list */
-    padding-left: 20px; /* Indent the list */
-}
-
-section {
-    flex: 1; /* Allow section to fill the available space */
+aside {
+    flex: 1;
     background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 1px 5px rgba(46, 56, 46, 0.5);
     padding: 20px;
-    margin-bottom: 20px; /* Space between sections */
-    margin-left: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
+article {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 a {
     color: #522b47;
+    text-decoration: none;
+}
+
+.read-more {
+    display: block;
+    margin-top: 10px;
+    color: #522b47;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #522b47;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
 }
