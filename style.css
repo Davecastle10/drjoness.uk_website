@@ -2,67 +2,62 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #8daa9d;
 }
 
-header {
+header, footer {
     background: #522b47;
     color: #fff;
     padding: 20px;
     text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
 .content-wrapper {
-    display: flex;
-    margin: 20px;
+    display: flex; /* Use Flexbox to arrange main and sidebar */
+    padding: 20px;
 }
 
 main {
-    flex: 3;
-    margin-right: 20px;
+    flex: 1; /* Take all available space */
+    margin-right: 20px; /* Space between main content and sidebar */
 }
 
-aside {
-    flex: 1;
+aside.sidebar {
+    width: 250px; /* Fixed width for the sidebar */
     background: #fff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 
-article {
-    background: #fff;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+.page-links {
+    margin-bottom: 20px; /* Spacing between sections in sidebar */
+}
+
+.page-links ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+.page-links ul li {
+    margin: 10px 0; /* Space between links */
 }
 
 h2 a {
-    color: #522b47;
+    color: #522b47; /* Link color */
     text-decoration: none;
 }
 
-.read-more {
-    display: block;
-    margin-top: 10px;
-    color: #522b47;
-    text-decoration: none;
+h2 a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
+
+section {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(46, 56, 46, 0.5);
+    padding: 20px;
+    margin-bottom: 20px; /* Space between sections */
 }
 
 footer {
@@ -70,9 +65,4 @@ footer {
     padding: 20px;
     background: #522b47;
     color: #fff;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
 }
