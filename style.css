@@ -14,7 +14,7 @@ header, footer {
 
 .content-wrapper {
     display: flex; /* Use Flexbox to arrange sidebar and main content */
-    padding: 0px;
+    padding: 20px;
     overflow: hidden; /* Prevent margin collapse from affecting layout */
 }
 
@@ -41,7 +41,7 @@ aside.sidebar {
 }
 
 .page-links ul li {
-    margin: 10px 0; /* Space between links */
+    margin: 0px 0; /* Space between links */
 }
 
 main {
