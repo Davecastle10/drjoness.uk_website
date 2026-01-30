@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #8daa9d;
-    display: flex; /* Use flex to align sections */
 }
 
 header, footer {
@@ -11,37 +10,36 @@ header, footer {
     color: #fff;
     padding: 20px;
     text-align: center;
-    width: 100%; /* Ensure header and footer span full width */
 }
 
-main {
-    flex: 1; /* Allow main content to fill available space */
-    display: flex; /* Enable layout for main sections */
-    padding: 20px;
-}
-
-section, nav {
-    margin-right: 20px; /* Space between sections */
-}
-
-nav {
-    width: 200px; /* Fixed width for the navigation */
-}
-
-.blog-post {
+section {
     padding: 20px;
     max-width: 800px;
-    margin-bottom: 20px; /* Add bottom margin for separation */
+    margin: 20px auto; /* Center sections with auto margins */
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 1px 5px rgba(46, 56, 46, 0.5);
+}
+
+/* New styles for the page links section */
+.page-links {
+    float: left; /* Align to the left */
+    width: 200px; /* Fixed width for links */
+    margin-right: 20px; /* Space between the links and other sections */
+}
+
+.page-links ul {
+    list-style-type: disc; /* Add bullet points to list */
+    padding-left: 20px; /* Indent the list */
 }
 
 h2 {
     color: #522b47;
 }
 
-ul {
-    list-style-type: disc; /* Add bullet points to list */
-    padding-left: 20px; /* Indent the list */
+/* Clearfix for the floating */
+body::after {
+    content: "";
+    display: table;
+    clear: both; /* Clear the float */
 }
