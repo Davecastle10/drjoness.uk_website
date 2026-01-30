@@ -74,3 +74,37 @@ footer {
     background: #522b47;
     color: #fff;
 }
+
+
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    aside.sidebar {
+        width: 100%; /* Full width for sidebar on mobile */
+        margin: 0 0 20px 0; /* No right margin */
+    }
+
+    main {
+        width: 100%; /* Full width for main content */
+    }
+
+    header, footer {
+        padding: 15px; /* Adjust padding for header and footer */
+    }
+
+    section {
+        padding: 15px; /* Adjust section padding */
+    }
+    
+    h1 {
+        font-size: 24px; /* Adjust font size for header */
+    }
+
+    h2 {
+        font-size: 20px; /* Adjust font size for subheaders */
+    }
+}
