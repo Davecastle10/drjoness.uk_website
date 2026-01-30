@@ -25,7 +25,7 @@ aside.sidebar {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-    margin-right: 20px; /* Space between sidebar and main content */
+    margin-right: 40px; /* Space between sidebar and main content */
     margin-left: 0px;
     min-height: 100%; /* Ensure sidebar height expands properly */
 }
