@@ -12,19 +12,14 @@ header, footer {
     text-align: center;
 }
 
-section {
+.content-wrapper {
+    display: flex; /* Enable Flexbox layout */
+    align-items: flex-start; /* Align items to the top */
     padding: 20px;
-    max-width: 800px;
-    margin: 20px auto; /* Center sections with auto margins */
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 1px 5px rgba(46, 56, 46, 0.5);
 }
 
-/* New styles for the page links section */
 .page-links {
-    float: left; /* Align to the left */
-    width: 200px; /* Fixed width for links */
+    width: 200px; /* Width for the links */
     margin-right: 20px; /* Space between the links and other sections */
 }
 
@@ -33,13 +28,15 @@ section {
     padding-left: 20px; /* Indent the list */
 }
 
-h2 {
-    color: #522b47;
+section {
+    flex: 1; /* Allow section to fill the available space */
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(46, 56, 46, 0.5);
+    padding: 20px;
+    margin-bottom: 20px; /* Space between sections */
 }
 
-/* Clearfix for the floating */
-body::after {
-    content: "";
-    display: table;
-    clear: both; /* Clear the float */
+h2 {
+    color: #522b47;
 }
