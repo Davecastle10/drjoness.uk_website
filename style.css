@@ -20,7 +20,7 @@ header, footer {
 
 .page-links {
     width: 200px; /* Width for the links */
-    margin-right: 20px; /* Space between the links and other sections */
+    /*margin-right: 20px; /* Space between the links and other sections */
     margin-left: 20px;
 }
 
@@ -36,6 +36,7 @@ section {
     box-shadow: 0 1px 5px rgba(46, 56, 46, 0.5);
     padding: 20px;
     margin-bottom: 20px; /* Space between sections */
+    margin-left: 20px;
 }
 
 h2 {
