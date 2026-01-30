@@ -21,6 +21,7 @@ header, footer {
 .page-links {
     width: 200px; /* Width for the links */
     margin-right: 20px; /* Space between the links and other sections */
+    margin-left: 20px;
 }
 
 .page-links ul {
