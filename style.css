@@ -78,7 +78,7 @@ footer {
 
 
 /* Media Queries for Mobile Devices */
-@media (max-width: 768px) {
+@media  only screen and (orientation: portrait) {
     .content-wrapper {
         flex-direction: column; /* Stack items vertically */
     }
