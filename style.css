@@ -41,7 +41,7 @@ aside.sidebar {
 }
 
 .page-links ul li {
-    margin: 0px 0; /* Space between links */
+    margin: 10px 0; /* Space between links */
 }
 
 main {
