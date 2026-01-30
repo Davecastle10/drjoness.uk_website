@@ -13,13 +13,8 @@ header, footer {
 }
 
 .content-wrapper {
-    display: flex; /* Use Flexbox to arrange main and sidebar */
+    display: flex; /* Use Flexbox to arrange sidebar and main content */
     padding: 20px;
-}
-
-main {
-    flex: 1; /* Take all available space */
-    margin-right: 20px; /* Space between main content and sidebar */
 }
 
 aside.sidebar {
@@ -28,6 +23,7 @@ aside.sidebar {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    margin-right: 20px; /* Space between sidebar and main content */
 }
 
 .page-links {
@@ -43,13 +39,8 @@ aside.sidebar {
     margin: 10px 0; /* Space between links */
 }
 
-h2 a {
-    color: #522b47; /* Link color */
-    text-decoration: none;
-}
-
-h2 a:hover {
-    text-decoration: underline; /* Underline on hover for links */
+main {
+    flex: 1; /* Take all available space */
 }
 
 section {
@@ -58,6 +49,15 @@ section {
     box-shadow: 0 1px 5px rgba(46, 56, 46, 0.5);
     padding: 20px;
     margin-bottom: 20px; /* Space between sections */
+}
+
+h2 a {
+    color: #522b47; /* Link color */
+    text-decoration: none;
+}
+
+h2 a:hover {
+    text-decoration: underline; /* Underline on hover for links */
 }
 
 footer {
