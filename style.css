@@ -1,8 +1,13 @@
+* {
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #8daa9d;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 header, footer {
@@ -10,47 +15,25 @@ header, footer {
     color: #fff;
     padding: 20px;
     text-align: center;
-    position: fixed;
 }
 
 .content-wrapper {
-    display: flex; /* Use Flexbox to arrange sidebar and main content */
+    display: flex;
     padding: 20px;
-    overflow: hidden; /* Prevent margin collapse from affecting layout */
 }
-
 
 aside.sidebar {
     width: 250px; /* Fixed width for the sidebar */
-    /*background: #fff; /* Ensure background is solid */
+    background: #fff; /* Sidebar background */
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
     margin-right: 20px; /* Space between sidebar and main content */
-    margin-left: 0px;
-    min-height: 100%; /* Ensure sidebar height expands properly */
-}
-
-
-.page-links {
-    margin-bottom: 20px; /* Spacing between sections in sidebar */
-}
-
-.page-links ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0;
-}
-
-.page-links ul li {
-    margin: 10px 0; /* Space between links */
 }
 
 main {
-    flex: 1; /* Take all available space */
-    display: flex;
-    flex-direction: column; /* Ensure sections align vertically */
+    flex: 1; /* Main area takes up remaining space */
 }
-
 
 section {
     background: #fff;
@@ -69,19 +52,11 @@ h2 a:hover {
     text-decoration: underline; /* Underline on hover for links */
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #522b47;
-    color: #fff;
-}
-
-
-
 /* Media Queries for Mobile Devices */
-@media  only screen and (orientation: portrait) {
+@media only screen and (orientation: portrait) {
     .content-wrapper {
         flex-direction: column; /* Stack items vertically */
+        padding: 0; /* Remove padding to avoid cutoff */
     }
 
     aside.sidebar {
