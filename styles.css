@@ -2,10 +2,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #8daa9dff;
 }
 header {
-    background: #007BFF;
+    background: #522b47ff;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -25,9 +25,17 @@ h2 {
 footer {
     text-align: center;
     padding: 10px;
-    background: #007BFF;
+    background: #522b47ff;
     color: #fff;
     position: relative;
     bottom: 0;
     width: 100%;
 }
+
+/* CSS HEX */ /*
+--pink-orchid: #dbbaddff;
+--muted-teal: #8daa9dff;
+--blackberry-cream: #522b47ff;
+--dark-teal: #114b5fff;
+--charcoal-brown: #2e382eff;
+*/
