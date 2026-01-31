@@ -52,35 +52,4 @@ h2 a:hover {
     text-decoration: underline; /* Underline on hover for links */
 }
 
-/* Media Queries for Mobile Devices */
-@media only screen and (orientation: portrait) {
-    .content-wrapper {
-        flex-direction: column; /* Stack items vertically */
-        padding: 0; /* Remove padding to avoid cutoff */
-    }
 
-    aside.sidebar {
-        width: 100%; /* Full width for sidebar on mobile */
-        margin: 0 0 20px 0; /* No right margin */
-    }
-
-    main {
-        width: 100%; /* Full width for main content */
-    }
-
-    header, footer {
-        padding: 15px; /* Adjust padding for header and footer */
-    }
-
-    section {
-        padding: 15px; /* Adjust section padding */
-    }
-    
-    h1 {
-        font-size: 24px; /* Adjust font size for header */
-    }
-
-    h2 {
-        font-size: 20px; /* Adjust font size for subheaders */
-    }
-}
