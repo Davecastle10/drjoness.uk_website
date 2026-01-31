@@ -1,3 +1,129 @@
-h2 {
-    color: #123456;
+* {
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #8daa9d;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+header, footer {
+    background: #522b47;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.content-wrapper {
+    display: flex;
+    padding: 20px;
+    @media only screen and (orientation: portrait) {
+    .content-wrapper {
+        flex-direction: column;
+        padding: 20px; /* Restore padding */
+        gap: 20px; /* Add gap for consistent spacing */
+    }
+
+    aside.sidebar {
+        width: 100%;
+        margin: 0; /* Remove any margins */
+    }/* Media Queries for Mobile Devices */
+@media only screen and (orientation: portrait) {
+    .content-wrapper {
+        flex-direction: column; /* Stack items vertically */
+        padding: 0; /* Remove padding to avoid cutoff */
+    }
+
+    aside.sidebar {
+        width: 100%; /* Full width for sidebar on mobile */
+        margin: 0 0 20px 0; /* No right margin */
+    }
+
+    main {
+        width: 100%; /* Full width for main content */
+    }
+
+    header, footer {
+        padding: 15px; /* Adjust padding for header and footer */
+    }
+
+    section {
+        padding: 15px; /* Adjust section padding */
+    }
+    
+    h1 {
+        font-size: 24px; /* Adjust font size for header */
+    }
+
+    h2 {
+        font-size: 20px; /* Adjust font size for subheaders */
+    }
+}
+}
+}
+
+aside.sidebar {
+    width: 250px; /* Fixed width for the sidebar */
+    background: #fff; /* Sidebar background */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    margin-right: 20px; /* Space between sidebar and main content */
+}
+
+main {
+    flex: 1; /* Main area takes up remaining space */
+}
+
+section {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(46, 56, 46, 0.5);
+    padding: 20px;
+    margin-bottom: 20px; /* Space between sections */
+}
+
+h2 a {
+    color: #522b47; /* Link color */
+    text-decoration: none;
+}
+
+h2 a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
+
+/* Media Queries for Mobile Devices */
+@media only screen and (orientation: portrait) {
+    .content-wrapper {
+        flex-direction: column; /* Stack items vertically */
+        padding: 0; /* Remove padding to avoid cutoff */
+    }
+
+    aside.sidebar {
+        width: 100%; /* Full width for sidebar on mobile */
+        margin: 0 0 20px 0; /* No right margin */
+    }
+
+    main {
+        width: 100%; /* Full width for main content */
+    }
+
+    header, footer {
+        padding: 15px; /* Adjust padding for header and footer */
+    }
+
+    section {
+        padding: 15px; /* Adjust section padding */
+    }
+    
+    h1 {
+        font-size: 24px; /* Adjust font size for header */
+    }
+
+    h2 {
+        font-size: 20px; /* Adjust font size for subheaders */
+    }
 }

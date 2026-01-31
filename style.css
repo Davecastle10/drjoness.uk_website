@@ -1,14 +1,14 @@
-/*
 * {
-    box-sizing: border-box; /* Include padding and border in element's total width and height 
-}
-*/
-body {
-    font-family: Arial, sans-serif;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
     background-color: #8daa9d;
     overflow-x: hidden; /* Prevent horizontal scrolling */
+    line-height: 1.6;
 }
 
 header, footer {
@@ -21,16 +21,18 @@ header, footer {
 .content-wrapper {
     display: flex;
     padding: 20px;
-    gap: 20px; /* Replaces margin-right on sidebar */
+    gap: 20px; /* Consistent spacing between flex items */
+    max-width: 1200px; /* Optional: limit maximum width */
+    margin: 0 auto; /* Center the content wrapper */
 }
 
 aside.sidebar {
-    width: 250px;
-    background: #fff;
+    width: 250px; /* Fixed width for the sidebar */
+    background: #fff; /* Sidebar background */
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-    margin-right: 0; /* Remove previous margin */
+    height: fit-content; /* Prevent unnecessary stretching */
 }
 
 main {
@@ -54,15 +56,45 @@ h2 a:hover {
     text-decoration: underline; /* Underline on hover for links */
 }
 
-@media only screen and (orientation: portrait) {
+/* Media Queries for Mobile Devices */
+@media only screen and (max-width: 768px) {
     .content-wrapper {
-        flex-direction: column;
-        padding: 20px; /* Restore padding */
-        gap: 20px; /* Add gap for consistent spacing */
+        flex-direction: column; /* Stack items vertically */
+        padding: 10px; /* Reduced padding */
+        gap: 15px; /* Adjusted gap for mobile */
     }
 
     aside.sidebar {
-        width: 100%;
-        margin: 0; /* Remove any margins */
+        width: 100%; /* Full width for sidebar on mobile */
     }
+
+    main {
+        width: 100%; /* Full width for main content */
+    }
+
+    header, footer {
+        padding: 15px; /* Adjust padding for header and footer */
+    }
+
+    section {
+        padding: 15px; /* Adjust section padding */
+    }
+    
+    h1 {
+        font-size: 24px; /* Adjust font size for header */
+    }
+
+    h2 {
+        font-size: 20px; /* Adjust font size for subheaders */
+    }
+}
+
+/* Optional: Improve accessibility and interaction */
+a {
+    transition: color 0.3s ease;
+}
+
+a:focus {
+    outline: 2px solid #522b47;
+    outline-offset: 2px;
 }
