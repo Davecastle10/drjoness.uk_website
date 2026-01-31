@@ -1,7 +1,8 @@
+/*
 * {
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    box-sizing: border-box; /* Include padding and border in element's total width and height 
 }
-
+*/
 body {
     font-family: Arial, sans-serif;
     margin: 0;
