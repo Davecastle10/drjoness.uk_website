@@ -50,8 +50,8 @@ aside.sidebar {
 
 main {
     flex: 1; /* Take all available space */
-    display: flex;
-    flex-direction: column; /* Ensure sections align vertically */
+    /*display: flex;
+    /*flex-direction: column; /* Ensure sections align vertically */
 }
 
 
@@ -77,7 +77,6 @@ h2 a:hover {
 /* Media Queries for Mobile Devices */
 @media only screen and (orientation: portrait) {
     .content-wrapper {
-        overflow: hidden;
         flex-direction: column; /* Stack items vertically */
         padding: 0; /* Remove padding to avoid cutoff */
     }
