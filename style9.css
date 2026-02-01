@@ -38,7 +38,7 @@ aside.sidebar {
 main {
     flex: 1; /* Take all available space */
     display: flex;
-    flex-direction: column; /* Ensure sections align vertically */
+    /*flex-direction: column; /* Ensure sections align vertically */
 }
 
 section {
@@ -49,6 +49,18 @@ section {
     margin-bottom: 20px; /* Space between sections */
 }
 
+.page-links {
+    margin-bottom: 20px; /* Spacing between sections in sidebar */
+}
+
+.page-links ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+.page-links ul li {
+    margin: 10px 0; /* Space between links */
+}
 
 
 
