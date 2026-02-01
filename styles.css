@@ -10,7 +10,7 @@ body {
 }
 header, footer {
     background: #522b47;
-    color: #8daa9d;
+    color: #f0f0f0;
     padding: 20px;
     text-align: center;
 }
@@ -31,7 +31,7 @@ footer {
     flex: 1; /* This column takes up one share of space */
     background-color: #f0f0f0; /* Light background for visibility */
     padding: 10px 20px 10px 0px; /* t r b l Space between rows */
-    margin: 20px 10px 20px 20px;
+    margin: 20px 10px 0px 20px;
     border-radius: 5px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
     /*border-right: 2px solid #ccc; /* Optional border between columns */
@@ -46,7 +46,7 @@ footer {
     padding: 10px 0px 10px 10px; /* t r b l Space between rows */
     background-color: #f0f0f0;
     border-bottom: 1px solid #ddd; /* Light border between rows */
-    margin: 20px 20px 20px 10px;
+    margin: 20px 20px 0px 10px;
     border-radius: 5px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
