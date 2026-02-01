@@ -40,6 +40,14 @@ main {
     flex-direction: column; /* Ensure sections align vertically */
 }
 
+section {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(46, 56, 46, 0.5);
+    padding: 20px;
+    margin-bottom: 20px; /* Space between sections */
+}
+
 
 .page-links {
     margin-bottom: 20px; /* Spacing between sections in sidebar */
@@ -55,15 +63,6 @@ main {
 }
 
 
-
-
-section {
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 1px 5px rgba(46, 56, 46, 0.5);
-    padding: 20px;
-    margin-bottom: 20px; /* Space between sections */
-}
 
 h2 a {
     color: #522b47; /* Link color */
