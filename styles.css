@@ -65,7 +65,7 @@ a:hover {
 }
 
 
-@media (max-width: 50vh) and (orientation: portrait) {
+@media only screen and (max-width: 50vh) {
     .container {
     min-height: 80vh;
     display: flex; /* Enable flexbox */
