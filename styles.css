@@ -8,7 +8,7 @@ body {
 
 .container {
     display: flex; /* Enable flexbox */
-    max-width: 1200px; /* Set a max width for the layout */
+    /*max-width: 1200px; /* Set a max width for the layout */
     margin: 0 auto; /* Center the container */
 }
 
