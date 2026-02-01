@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>D R Jones: Blog</title>
+    <Style> 
+        /*messing about to change the footer, but try this link for a way to make it automatic rather than manual
+        https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/ */
+        footer {
+            /*position: fixed;*/
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+        .links-column { /* t r b l Space between rows */
+            margin: 20px 10px 110px 20px;
+            /*border-right: 2px solid #ccc; /* Optional border between columns */
+        }
+        .data-column {
+            flex: 3; /* This column takes up three shares of space */
+            padding: 0px 0px 110px 0px;
+            /*padding: 20px; /* Add some padding */
+        }
+        .data-row {
+            margin: 20px 10px 0px 0px;
+        }
+    </Style>
+</head>
+<body>
+    <header> 
+        <h1>D R Jones</h1>
+        <p>Second Year Student at the University of Birmingham</p>
+    </header>
+    <div class="container">
+        <div class="links-column">
+            <ul>
+        <h2>Page Links</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">My Blog</a></li>
+            <li><a href="#">CV</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+            <h2>About Me</h2>
+            <p>Hello! I am a university student studying Mathematics and Computer Science. I like reading, competing in CTFs, and video games.</p>
+            <h2>Contact</h2>
+            <p>Email: contact@drjoness.uk<br>
+            <a href="https://github.com/Davecastle10">GitHub</a><br>
+            <a href="https://www.linkedin.com/in/david-jones-448b2a264/">LinkedIn</a></p>
+        </div>
+        <div class="data-column">
+            <div class="data-row">
+                <h2>Article 1: First Post</h2>
+                <p>I thought it would be interesting to make a blog page even if I don't actually post much here, you can expect to find random posts and the occaional write up for a ctf challenge here when I eventually get round to making some I believe are actually worth posting on the internet.</p>
+            </div>
+            <div class="data-row">
+                <h2>Article 2: Filler</h2>
+                <p>This article is here to make the blog look more full whilst I am doing the stylising and formatting for how I eventyally want it to look, I'm tmepted to make these posts her be a brief overview of the actual posts, and then have the titles of the articles be links to the main article pages themselves, in order to try and avoid having this page become extremely long and awkward to navigate, it may also be worthwhile learning how CSS pagination works to see if that could help make the navigation experience nicer when there end up being a lot more posts on the blog.</p>
+            </div>
+            <div class="data-row">
+                <h2>Article 3: Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <!-- Add more data rows as needed -->
+        </div>
+    </div>
+
+    <footer>
+    <p>&copy; 2026 D R Jones. All rights reserved.</p>
+    </footer>
+</body>
+</html>
