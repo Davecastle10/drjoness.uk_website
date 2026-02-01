@@ -74,7 +74,7 @@ a:hover {
 @media only screen and (max-width: 50vh) {
     .container {
     display: flex; /* Enable flexbox */
-    flex-direction: column;
+    flex-direction: row;
     padding: 0px 0px 5rem 0px;
     /*max-width: 1200px; /* Set a max width for the layout */
     }
@@ -103,8 +103,4 @@ a:hover {
         border-radius: 5px;
         box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
     }
-    a {
-    text-decoration: none; /* Remove underline from links */
-    color: #ff7BFF; /* Link color */
-}
 }
