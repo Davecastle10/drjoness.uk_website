@@ -4,6 +4,13 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #8daa9d;
+}
+header, footer {
+    background: #522b47;
+    color: #8daa9d;
+    padding: 20px;
+    text-align: center;
 }
 
 .container {
