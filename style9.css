@@ -47,7 +47,7 @@ aside.sidebar {
 main {
     flex: 1; /* Take all available space */
     display: flex;
-    flex-direction: column; /* Ensure sections align vertically */
+    /*flex-direction: column; /* Ensure sections align vertically */
 }
 
 
