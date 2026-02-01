@@ -28,7 +28,7 @@ header, footer {
 aside.sidebar {
     width: 250px; /* Fixed width for the sidebar */
     background: #fff; /* Ensure background is solid */
-    /*padding: 20px;
+    padding: 20px;
     border-radius: 5px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
     margin-right: 20px; /* Space between sidebar and main content */
@@ -50,18 +50,6 @@ section {
 }
 
 
-.page-links {
-    margin-bottom: 20px; /* Spacing between sections in sidebar */
-}
-
-.page-links ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0;
-}
-
-.page-links ul li {
-    margin: 10px 0; /* Space between links */
-}
 
 
 
