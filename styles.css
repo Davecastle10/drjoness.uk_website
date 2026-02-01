@@ -4,6 +4,8 @@
 
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #8daa9d;
 }
 header, footer {
@@ -22,18 +24,25 @@ header, footer {
 .links-column {
     flex: 1; /* This column takes up one share of space */
     background-color: #f0f0f0; /* Light background for visibility */
-    padding: 20px; /* Add some padding */
-    border-right: 2px solid #ccc; /* Optional border between columns */
+    padding: 10px 20px 10px 0px; /* t r b l Space between rows */
+    margin: 20px 10px 20px 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    /*border-right: 2px solid #ccc; /* Optional border between columns */
 }
 
 .data-column {
     flex: 3; /* This column takes up three shares of space */
-    padding: 20px; /* Add some padding */
+    /*padding: 20px; /* Add some padding */
 }
 
 .data-row {
-    padding: 10px; /* Space between rows */
+    padding: 10px 0px 10px 10px; /* t r b l Space between rows */
+    background-color: #f0f0f0;
     border-bottom: 1px solid #ddd; /* Light border between rows */
+    margin: 20px 20px 20px 10px;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 a {
