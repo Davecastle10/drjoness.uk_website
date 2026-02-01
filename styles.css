@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex; /* Enable flexbox */
+    max-width: 1200px; /* Set a max width for the layout */
+    margin: 0 auto; /* Center the container */
+}
+
+.links-column {
+    flex: 1; /* This column takes up one share of space */
+    background-color: #f0f0f0; /* Light background for visibility */
+    padding: 20px; /* Add some padding */
+    border-right: 2px solid #ccc; /* Optional border between columns */
+}
+
+.data-column {
+    flex: 3; /* This column takes up three shares of space */
+    padding: 20px; /* Add some padding */
+}
+
+.data-row {
+    padding: 10px; /* Space between rows */
+    border-bottom: 1px solid #ddd; /* Light border between rows */
+}
+
+a {
+    text-decoration: none; /* Remove underline from links */
+    color: #007BFF; /* Link color */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
