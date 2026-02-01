@@ -20,6 +20,7 @@ header, footer {
 .content-wrapper {
     display: flex; /* Use Flexbox to arrange sidebar and main content */
     padding: 20px;
+    flex-wrap: wrap;
     overflow: hidden; /* Prevent margin collapse from affecting layout */
 }
 
@@ -31,7 +32,7 @@ aside.sidebar {
     border-radius: 5px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
     margin-right: 20px; /* Space between sidebar and main content */
-    min-height: 100%; /* Ensure sidebar height expands properly */
+    /*min-height: 100%; /* Ensure sidebar height expands properly */
 }
 
 main {
