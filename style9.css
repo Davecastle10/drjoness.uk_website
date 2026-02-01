@@ -34,6 +34,12 @@ aside.sidebar {
     min-height: 100%; /* Ensure sidebar height expands properly */
 }
 
+main {
+    flex: 1; /* Take all available space */
+    display: flex;
+    flex-direction: column; /* Ensure sections align vertically */
+}
+
 
 .page-links {
     margin-bottom: 20px; /* Spacing between sections in sidebar */
@@ -48,11 +54,7 @@ aside.sidebar {
     margin: 10px 0; /* Space between links */
 }
 
-main {
-    flex: 1; /* Take all available space */
-    /*display: flex;
-    /*flex-direction: column; /* Ensure sections align vertically */
-}
+
 
 
 section {
