@@ -83,7 +83,7 @@ a:hover {
         /*flex: 0; /* This column takes up one share of space */
         background-color: #f0f0f0; /* Light background for visibility */
         padding: 10px 10px 10px 10px; /* t r b l Space between rows */
-        margin: 20px 20px 0px 20px;
+        margin: 20px 20px 20px 20px;
         border-radius: 5px;
         box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
         /*border-right: 2px solid #ccc; /* Optional border between columns */
@@ -91,7 +91,7 @@ a:hover {
 
     .data-column {
         /*flex: 0; /* This column takes up three shares of space */
-        margin: 20px 20px 20px 20px;
+        margin: 0px 20px 20px 20px;
         /*padding: 20px; /* Add some padding */
     }
 
