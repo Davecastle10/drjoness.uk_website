@@ -20,7 +20,6 @@ header, footer {
 .content-wrapper {
     display: flex;
     padding: 20px;
-    overflow: hidden
 
 }
 
