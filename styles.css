@@ -73,8 +73,8 @@ a:hover {
 
 @media only screen and (max-width: 50vh) {
     .container {
-    display: relative; /* Enable flexbox */
-    /*flex-direction: column;*/
+    display: flex; /* Enable flexbox */
+    flex-direction: column;
     padding: 0px 0px 5rem 0px;
     }
 
@@ -84,6 +84,7 @@ a:hover {
         padding: 10px 10px 10px 10px; /* t r b l Space between rows */
         margin: 20px 20px 20px 20px;
         border-radius: 5px;
+        width: 100%;
         box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
         /*border-right: 2px solid #ccc; /* Optional border between columns */
     }
@@ -91,6 +92,7 @@ a:hover {
     .data-column {
         /*flex: 0; /* This column takes up three shares of space */
         margin: 0px 20px 20px 20px;
+        width: 100%;
         /*padding: 20px; /* Add some padding */
     }
 
