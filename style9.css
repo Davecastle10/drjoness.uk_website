@@ -79,8 +79,8 @@ h2 a:hover {
 /* Media Queries for Mobile Devices */
 @media only screen and (orientation: portrait) {
     .content-wrapper {
-        flex-wrap: wrap;
         flex-direction: column; /* Stack items vertically */
+        flex-wrap: wrap;
         padding: 0; /* Remove padding to avoid cutoff */
     }
 
@@ -90,7 +90,6 @@ h2 a:hover {
     }
 
     main {
-        overflow: hidden;
         width: 100%; /* Full width for main content */
     }
 
@@ -99,7 +98,6 @@ h2 a:hover {
     }
 
     section {
-        overflow: hidden;
         padding: 15px; /* Adjust section padding */
     }
     
