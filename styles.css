@@ -9,7 +9,6 @@ body {
     min-height: 100vh;
     position: relative;
     background-color: #8daa9d;
-    align-items: flex-end;
 }
 .page-container {
     position:relative;
