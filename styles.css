@@ -82,7 +82,7 @@ a:hover {
     .links-column {
         /*flex: 0; /* This column takes up one share of space */
         background-color: #f0f0f0; /* Light background for visibility */
-        padding: 10px 20px 10px 0px; /* t r b l Space between rows */
+        padding: 10px 10px 10px 10px; /* t r b l Space between rows */
         margin: 20px 20px 0px 20px;
         border-radius: 5px;
         box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
@@ -91,12 +91,12 @@ a:hover {
 
     .data-column {
         /*flex: 0; /* This column takes up three shares of space */
-        margin: 0px 20px 20px 20px;
+        margin: 20px 20px 20px 20px;
         /*padding: 20px; /* Add some padding */
     }
 
     .data-row {
-        padding: 10px 0px 10px 10px; /* t r b l Space between rows */
+        padding: 10px 10px 10px 10px; /* t r b l Space between rows */
         background-color: #f0f0f0;
         border-bottom: 1px solid #ddd; /* Light border between rows */
         margin: 20px 0px 0px 0px;
