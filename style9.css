@@ -46,7 +46,7 @@ aside.sidebar {
 
 main {
     flex: 1; /* Take all available space */
-    /*display: flex;
+    display: flex;
     flex-direction: column; /* Ensure sections align vertically */
 }
 
@@ -65,20 +65,15 @@ h2 a {
 }
 
 h2 a:hover {
+    color: #522b47; /* Link color */
     text-decoration: underline; /* Underline on hover for links */
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #522b47;
-    color: #fff;
 }
 
 
 /* Media Queries for Mobile Devices */
 @media only screen and (orientation: portrait) {
     .content-wrapper {
+        overflow: hidden;
         flex-direction: column; /* Stack items vertically */
         padding: 0; /* Remove padding to avoid cutoff */
     }
@@ -89,6 +84,7 @@ footer {
     }
 
     main {
+        overflow: hidden;
         width: 100%; /* Full width for main content */
     }
 
@@ -97,6 +93,7 @@ footer {
     }
 
     section {
+        overflow: hidden;
         padding: 15px; /* Adjust section padding */
     }
     
