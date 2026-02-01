@@ -49,7 +49,18 @@ section {
 }
 
 
+.page-links {
+    margin-bottom: 20px; /* Spacing between sections in sidebar */
+}
 
+.page-links ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+.page-links ul li {
+    margin: 10px 0; /* Space between links */
+}
 
 
 
