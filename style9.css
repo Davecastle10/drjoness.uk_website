@@ -20,7 +20,7 @@ header, footer {
 .content-wrapper {
     display: flex; /* Use Flexbox to arrange sidebar and main content */
     padding: 20px;
-    flex-wrap: wrap;
+
     overflow: hidden; /* Prevent margin collapse from affecting layout */
 }
 
@@ -79,6 +79,7 @@ h2 a:hover {
 /* Media Queries for Mobile Devices */
 @media only screen and (orientation: portrait) {
     .content-wrapper {
+        flex-wrap: wrap;
         flex-direction: column; /* Stack items vertically */
         padding: 0; /* Remove padding to avoid cutoff */
     }
