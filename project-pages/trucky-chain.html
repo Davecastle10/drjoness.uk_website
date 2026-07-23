@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>D R Jones: Projects</title>
+    
+</head>
+<body>
+    <header> 
+        <h1>D R Jones</h1>
+        <p>Third Year Student at the University of Birmingham</p>
+    </header>
+    <div class="container">
+        <div id="links-column-container"></div>
+
+        <div class="data-column">
+
+            <a href="https://trucky.bluka.uk/index.html" class="data-row blog-link">
+                <h2>TruckyChain</h2>
+                <p>A vehicle tracking and order fulfillment platform built at the Frontier Tech Hackathon w/ Solana. Trucky Chain is a blockchain based vehicle tracking and order management software, that allows for secure positional tracking of vehicles and the the orders they are transporting.</p>
+            </a>
+            <div class="data-row">
+                <h2>How it works</h2>
+                <h3>Core components</h3>
+                <p>TruckyChain is built on 3 main overarching components:</p>
+                <ul>
+                    <li>Blockchain data storage and verification</li>
+                    <li>Backend position tracking and database management</li>
+                    <li>Frontend interface and mapping</li>
+                </ul>
+
+                <h3>Data storage and immutability</h3>
+                <p>Location data is recorded as immutable timestamped transactions on the blockchain, making it permanent and cryptographically verifiable, and creating an auditable trail of every movement the vehicle makes. This prevents situations such as a driver stopping to skim merchandise and an administrator covering it up by retroactively changing the location history, because clients can verify that the location data they see matches the proofs stored on the blockchain, ensuring the location data hasn't been tampered with after the fact.</p>
+                
+                <h3>Fraud prevention</h3>
+                <p>TruckyChain prevents fraud in the shipping process by making it impossible to hide any deviations in the vehicle's route that could correspond with the driver pulling over to skim merchandise, as it is impossible to go back and edit the vehicle's recorded location history after the fact due to how the blockchain proofs for location history work - this builds greater trust between the shipping provider and their clients who hire them to move their merchandise.</p>
+
+                <h3>Client frontend</h3>
+                <p>Shipping providers can log in to their portal to view shipments in progress in real time, and trace specific shipments from start to finish - all of which are displayed on a map powered by the <a href="https://www.openstreetmap.org/#map=6/54.91/-3.43"> OpenStreetMap api</a>, and they can share details with their clients who are using them to ship products to be able to view their freight whilst it's in transport and receive updates on the shipping process via the client portal as well.</p>
+            
+            </div>
+
+
+        </div>
+    </div>
+
+    <footer>
+    <p>&copy; 2026 D R Jones. All rights reserved.</p>
+    </footer>
+    <script>
+        fetch('/includes/links-column-foldered.html')
+            .then(response => response.text())
+            .then(data => {
+                const container = document.getElementById('links-column-container');
+                container.innerHTML = data;
+                container.classList.add('loaded');
+            });
+    </script>
+</body>
+</html>
