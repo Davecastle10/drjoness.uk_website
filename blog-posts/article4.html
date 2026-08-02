@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>D R Jones: Blog Article 4</title>
+    
+</head>
+<body>
+    <header> 
+        <h1>D R Jones</h1>
+        <p>Third Year Student at the University of Birmingham</p>
+    </header>
+    <div class="container">
+        <div id="links-column-container"></div>
+
+        <div class="data-column">
+            <div class="data-row">
+                <h2>Article 4: New Tablet Keyboard Case And Acode</h2>
+                <p> I got a new keyboard case for my tablet it's really nice, so now I can use my tablet for long typing sessions. <br> In conjunction with the new case, I have also set up acode on my tablet - acode is an android ide that let's you code in a similar environment to the desktop version of visual studio code. I have acode setup so that the terminal runs as Alpine Linux, and I can as far as I'm aware run any command in the terminal that I would on my Linux laptop - except for architecture specific commands - which is really cool as I can now use acode for doing tasks and ctf challenges for AFNOM as well as working on programming projects when I don't want to bring my laptop about with me. </p>            
+            </div>
+            <!-- Add more data rows as needed -->
+        </div>
+    </div>
+
+    <footer>
+    <p>&copy; 2026 D R Jones. All rights reserved.</p>
+    </footer>
+    <script>
+        fetch('/includes/links-column-foldered.html')
+            .then(response => response.text())
+            .then(data => {
+                const container = document.getElementById('links-column-container');
+                container.innerHTML = data;
+                container.classList.add('loaded');
+            });
+    </script>
+</body>
+</html>
