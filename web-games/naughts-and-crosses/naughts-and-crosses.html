@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../styles.css">
+    <link rel="stylesheet" href="naughts-and-crosses.css">
     <title>D R Jones: Naughts and Crosses</title>
 </head>
 <body>
@@ -18,10 +19,21 @@
             <div class="data-column">
                 <div class="data-row">
                     <h2>Naughts and Crosses</h2>
-                    <p>A simple game of naughts and crosses made by following <a href="https://www.kennyyipcoding.com/">Kenny Yip Coding's</a> <a href="https://youtu.be/LD9UEC7AI7g?is=SO3Ujsiz862mWeEo">tutorial</a> </p>
+                    <p>A simple game of naughts and crosses made by following <a href="https://www.kennyyipcoding.com/">Kenny Yip Coding's</a> <a href="https://youtu.be/LD9UEC7AI7g?is=SO3Ujsiz862mWeEo">tutorial</a>, to familliarise myself back with javascript before working on some harder projects. </p>
                 </div>
                 <div class="data-row">
-                    <p>And soon you will be able to fill out a contact form here as well.</p>
+                    <div id="game-board">
+                      <div data-cell-index="0" class="game-cell"></div>
+                      <div data-cell-index="1" class="game-cell"></div>
+                      <div data-cell-index="2" class="game-cell"></div>
+                      <div data-cell-index="3" class="game-cell"></div>
+                      <div data-cell-index="4" class="game-cell"></div>
+                      <div data-cell-index="5" class="game-cell"></div>
+                      <div data-cell-index="6" class="game-cell"></div>
+                      <div data-cell-index="7" class="game-cell"></div>
+                      <div data-cell-index="8" class="game-cell"></div>
+                    </div>
+                    <button id="game-restart-button">Restart Game</button>
                 </div>
             </div>
         </div>
@@ -39,5 +51,6 @@
                 container.classList.add('loaded');
             });
     </script>
+    <script src="naughts-and-crosses.js"></script>
 </body>
 </html>

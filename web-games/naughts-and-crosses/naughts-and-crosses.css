@@ -1,0 +1,51 @@
+body {
+  /* text-align: center;/* don't think this is actually taking preference over the main styles.css, just put here so i remember to center the X O in the game cells later on */
+}
+
+/* need to fix the button not being centred on the gameboard*/
+
+.data-row {
+  background: url("./naughts-and-crosses-background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+  align-items: center;
+}
+
+#game-board {
+  width: 450px;
+  height: 450px;
+  margin: 0 auto;
+  background-color: skyblue;
+  color: white;
+  border: 6px solid lightblue;
+  border-radius: 10px;
+
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+.game-cell {
+  border: 6px solid lightblue;
+  border-radius: 2px;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.winning-game-cell {
+  background-color: white;
+  color: skyblue;
+}
+
+#game-restart-button {
+  height: 50px;
+  width: 150px;
+  border: 5px solid lightblue;
+  border-radius: 5px;
+  background-color: skyblue;
+  color: white;
+  font-size: 15px;
+  margin-top: 20px;
+  
+}
