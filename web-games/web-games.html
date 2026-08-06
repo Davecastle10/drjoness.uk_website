@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles.css">
+    <title>D R Jones: Web Games</title>
+    
+</head>
+<body>
+    <header> 
+        <h1>D R Jones</h1>
+        <p>Third Year Student at the University of Birmingham</p>
+    </header>
+    <div class="container">
+        <div id="links-column-container"></div>
+
+        <div class="data-column">
+            <div class="data-row">
+                    <h2>Web Games</h2>
+                    <p>Here are some web games I've created either by myself or with the help of some tutorials. I'll add some more here as I get the time to do so, as I have an idea for an interseting game, or as I see a tutorial that looks like I will leanr enough from it to be worth following.</p>
+            </div>
+
+            <a href="naughts-and-crosses/naughts-and-crosses.html" class="data-row blog-link">
+                <h2>Naughts and Crosses</h2>
+                <p>A simple game of naughts and crosses made by following Kenny Yip Coding's tutorial. </p>
+            </a>
+
+
+        </div>
+    </div>
+
+    <footer>
+    <p>&copy; 2026 D R Jones. All rights reserved.</p>
+    </footer>
+    <script>
+        fetch('/includes/links-column-foldered.html')
+            .then(response => response.text())
+            .then(data => {
+                const container = document.getElementById('links-column-container');
+                container.innerHTML = data;
+                container.classList.add('loaded');
+            });
+    </script>
+</body>
+</html>
