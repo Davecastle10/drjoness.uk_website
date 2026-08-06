@@ -2,8 +2,15 @@ let playerO = "O";
 let playerX = "X";
 let currentPlayer = playerO;
 
+let score = [0, 0] // inedx 0 is player O index 1 is player X
+
 let gameBoard = ["", "", "", "", "", "", "", "", ""];
 let gameCells;
+
+const scoreOEl = document.getElementById('playerO-score');
+const scoreXEl = document.getElementById('playerX-score');
+scoreOEl.textContent = score[0];
+scoreXEl.textContent = score[1];
 
 let winningConditions = [
   [0, 1, 2], // horizontal row 1
@@ -69,8 +76,23 @@ function checkWinner () {
 function restartGame () {
   gameOver = false;
   gameBoard = ["", "", "", "", "", "", "", "", ""];
+  let winner = null;
   for (let cell of gameCells) {
+    if (cell.classList.contains("winning-game-cell")) {
+      if (cell.innerText == "O") {
+        winner = 0;
+      }
+      else {
+        winner = 1;
+      }
+    }
     cell.innerText = "";
-    cell.classList.remove("winning-game-cell");
+    cell.classList.remove("winning-game-cell")
   }
+
+  if (winner != null){
+    score[winner]++;   
+  }
+  scoreOEl.textContent = score[0];
+  scoreXEl.textContent = score[1];
 }

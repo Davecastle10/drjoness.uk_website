@@ -4,6 +4,10 @@ body {
 
 /* need to fix the button not being centred on the gameboard*/
 
+.game-score-container {
+  display: flex;
+}
+
 .data-row {
   background: url("./naughts-and-crosses-background.jpg") no-repeat center center fixed;
   background-size: cover;
@@ -23,6 +27,21 @@ body {
   display: grid;
   grid-template: repeat(3, 1fr) / repeat(3, 1fr);
 }
+
+#score-board {
+  width: 300px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: skyblue;
+  color: white;
+  border: 6px solid lightblue;
+  border-radius: 10px;
+  /*
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  */
+}
+
 
 .game-cell {
   border: 6px solid lightblue;
