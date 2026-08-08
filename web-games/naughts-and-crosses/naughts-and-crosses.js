@@ -12,6 +12,9 @@ const scoreXEl = document.getElementById('playerX-score');
 scoreOEl.textContent = score[0];
 scoreXEl.textContent = score[1];
 
+let singlePlayer = false;
+let emptyCells = [0, 1, 2, 3, 4, 5, 6, 7, 8]
+
 let winningConditions = [
   [0, 1, 2], // horizontal row 1
   [3, 4, 5], // horizontal row 2
@@ -33,6 +36,22 @@ window.onload = function () {
   }
   restartGamebutton = document.getElementById("game-restart-button");
   restartGamebutton.addEventListener("click", restartGame)
+
+  resetScorebutton = document.getElementById("reset-score-button");
+  resetScorebutton.addEventListener("click", resetScore)
+
+  modeToggle = document.getElementById("mode-toggle");
+
+  modeToggle.addEventListener("change", () => {
+    if (modeToggle.checked) {
+      // toggle is ON
+      singlePlayer = true;
+    } else {
+      // toggle is OFF
+      singlePlayer  = false;
+    }
+  });
+
 }
 
 function placeCell() {
@@ -48,10 +67,49 @@ function placeCell() {
   this.innerText = currentPlayer;
   gameBoard[index] = currentPlayer;
   
+  let pos = emptyCells.indexOf(index);
+  if (pos !== -1) {
+    emptyCells.splice(pos, 1);
+  }
+
+  
   // change players
   currentPlayer = (currentPlayer == playerO) ? playerX : playerO;
 
   //check for the winner
+  checkWinner()
+
+  
+
+  if (singlePlayer) {
+
+    if (gameOver) {
+      return; // check for gameover after player has played, if not then robot gets to play in singleplayer
+    }
+    
+    if (currentPlayer == playerX) {
+      if (gameBoard[4] == "") {
+        gameCells[4].innerText = playerX;
+        gameBoard[4] = playerX
+        currentPlayer = playerO;
+        const pos = emptyCells.indexOf(4);
+        if (pos !== -1) emptyCells.splice(pos, 1);
+
+      }
+      else {
+        let randCellIndex = getRandomEmptyIndex();
+
+        if (randCellIndex != null) {
+          gameCells[randCellIndex].innerText = playerX;
+          gameBoard[randCellIndex] = playerX;
+          currentPlayer = playerO;
+          const pos = emptyCells.indexOf(randCellIndex);
+          if (pos !== -1) emptyCells.splice(pos, 1);
+          
+        }
+      }
+    }
+  }
   checkWinner()
 }
 
@@ -88,6 +146,11 @@ function restartGame () {
     }
     cell.innerText = "";
     cell.classList.remove("winning-game-cell")
+    if (singlePlayer) {
+      currentPlayer = playerO;
+    }
+
+    emptyCells = [0, 1, 2, 3, 4, 5, 6, 7, 8]
   }
 
   if (winner != null){
@@ -95,4 +158,17 @@ function restartGame () {
   }
   scoreOEl.textContent = score[0];
   scoreXEl.textContent = score[1];
+}
+
+function resetScore () {
+  score = [0, 0];
+  scoreOEl.textContent = score[0];
+  scoreXEl.textContent = score[1];
+}
+
+function getRandomEmptyIndex() {
+  if (emptyCells.length === 0) return null;
+
+  const r = Math.floor(Math.random() * emptyCells.length);
+  return emptyCells[r];
 }
