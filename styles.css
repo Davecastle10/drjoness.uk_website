@@ -38,6 +38,7 @@ footer {
 .container {
     display: flex; /* Enable flexbox */
     padding: 0px 0px 5rem 0px;
+    flex-wrap: wrap; /* might fix the issue of not going to column in mobile*/
 }
 
 .links-column {
@@ -174,11 +175,12 @@ a:hover {
 }
 
 
-@media only screen and (max-width: 50vh) {
+@media only screen and (max-width: 600px) {
     .container {
     display: flex; /* Enable flexbox */
     flex-direction: column;
     padding: 0px 0px 5rem 0px;
+    flex-wrap: wrap;
     }
 
     .links-column {
