@@ -181,5 +181,13 @@ input:checked + .slider:before {
     height: 1000px
     }
 
+  #score-board {
+    align-self: center;
+  }
+
+  #game-board {
+    align-self: center;
+  }
+
 
 }
