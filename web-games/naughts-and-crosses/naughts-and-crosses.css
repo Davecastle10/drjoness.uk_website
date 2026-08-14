@@ -172,3 +172,12 @@ input:checked + .slider:before {
 .mode-text.left{ text-align: left; }
 .mode-text.right{ text-align: right; }
 
+@media only screen and (max-width: 600px) {
+    .game-score-container {
+    display: flex; /* Enable flexbox */
+    flex-direction: column;
+    flex-wrap: wrap;
+    }
+
+
+}
