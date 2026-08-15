@@ -49,8 +49,8 @@ footer {
     max-width: 250px;
     color: black;
     background-color: #f9e784; /* Light background for visibility */
-    padding: 10px 10px 0px 10px; /* t r b l Space between rows */
-    margin: 20px 10px 20px 20px;
+    padding: 0.75rem 0.75rem 0px 0.75rem; /* t r b l Space between rows */
+    margin: 1.25rem 0.75rem 1.25rem 1.25rem;
     border-radius: 5px;
     border-style: solid;
     border-color:black;
@@ -76,14 +76,14 @@ footer {
 
 .data-column {
     flex: 3; /* This column takes up three shares of space */
-    margin: 0px 20px 0px 0px;
+    margin: 0px 1.25rem 0px 0px;
 }
 
 .data-row {
-    padding: 10px 10px 10px 10px; /* t r b l Space between rows */
+    padding: 0.75rem 0.75rem 0.75rem 0.75rem; /* t r b l Space between rows */
     background-color: #bdfffd;
     /*border-bottom: 1px solid #ddd; /* Light border between rows */
-    margin: 20px 0px 20px 10px;
+    margin: 1.25rem 0px 1.25rem 0.75rem;
     border-radius: 5px;
     border-style: solid;
     border-color:black;
@@ -167,7 +167,7 @@ a {
     display: block;
     text-decoration: none;
     color: inherit;
-    margin: 20px 0px 20px 10px;
+    margin: 1.25rem 0px 1.25rem 0.75rem;
 }
 
 
@@ -188,7 +188,7 @@ a:hover {
         flex: 0; /* This column takes up one share of space */
         background-color: #f9e784; /* Light background for visibility */
         padding: 0.75rem; /* t r b l Space between rows */
-        margin: 0.75rem 0rem;
+        margin: 0.75rem 0rem 0rem 0rem; /* only pad the top, because the bottom padding is handled by the padding on the bottom of the data rows*/
         border-radius: 5px;
         max-width: 100%;
         border-style: solid;
@@ -199,15 +199,16 @@ a:hover {
     .data-column {
         flex: 0; /* This column takes up three shares of space */
         margin: 0rem;
+        padding: 0rem 0rem 0.75rem 0rem; /* pad only the bottom? */
         max-width: 100%;
-        /*padding: 20px; /* Add some padding */
+        /*padding: 1.25rem; /* Add some padding */
     }
 
     .data-row {
-        padding: 10px 10px 10px 10px; /* t r b l Space between rows */
+        padding: 0.75rem; /* t r b l Space between rows */
         background-color: #bdfffd;
         border-bottom: 1px solid #ddd; /* Light border between rows */
-        margin: 20px 0px 0px 0px;
+        margin: 1.25rem 0px 0px 0px;
         border-radius: 5px;
         border-style: solid;
         border-color:black;
