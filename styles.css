@@ -180,15 +180,15 @@ a:hover {
     .container {
     display: flex; /* Enable flexbox */
     flex-direction: column;
-    padding: 0px 0px 5rem 0px;
+    padding: 0px 0.75rem 5rem 0.75rem;
     flex-wrap: wrap;
     }
 
     .links-column {
         flex: 0; /* This column takes up one share of space */
         background-color: #f9e784; /* Light background for visibility */
-        padding: 10px 10px 10px 10px; /* t r b l Space between rows */
-        margin: 20px 20px 20px 20px;
+        padding: 0.75rem; /* t r b l Space between rows */
+        margin: 0.75rem 0rem;
         border-radius: 5px;
         max-width: 100%;
         border-style: solid;
@@ -198,8 +198,8 @@ a:hover {
     }
     .data-column {
         flex: 0; /* This column takes up three shares of space */
-        margin: 0px 20px 20px 20px;
-        width: 100%;
+        margin: 0rem;
+        max-width: 100%;
         /*padding: 20px; /* Add some padding */
     }
 
