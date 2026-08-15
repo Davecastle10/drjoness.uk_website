@@ -1,3 +1,6 @@
+html { font-size: 16px; }
+
+
 * {
     box-sizing: border-box;
 }
@@ -17,7 +20,7 @@ body {
 header, footer {
     background: #f9e784;
     color: black;
-    padding: 20px;
+    padding: 1.25rem;
     text-align: center;
 }
 
@@ -119,7 +122,6 @@ button {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
   margin: 0px 0px;
   cursor: pointer;
   box-shadow: 5px 5px 5px #522b47;
@@ -133,7 +135,6 @@ button {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
   margin: 0px 0px;
   cursor: pointer;
   box-shadow: 3px 3px 3px #522b47;
@@ -189,7 +190,7 @@ a:hover {
         padding: 10px 10px 10px 10px; /* t r b l Space between rows */
         margin: 20px 20px 20px 20px;
         border-radius: 5px;
-        width: 100%;
+        max-width: 100%;
         border-style: solid;
         border-color:black;
         box-shadow: 5px 5px 5px #522b47;
