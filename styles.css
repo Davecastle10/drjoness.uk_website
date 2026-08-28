@@ -1,3 +1,20 @@
+:root {
+  --shadow-colour: #522b47;
+  --background-colour-light: white;
+  --text-light: black;
+  --links-column-background-light: #f9e784;
+  --header-footer-background-light: #f9e784;
+
+  /* Data row light background colours */
+  --data-row-bg-light-1: #bdfffd;
+  --data-row-bg-light-2: #e0f0ff;
+  --data-row-bg-light-3: #e0c5ff;
+  --data-row-bg-light-4: #d4abef;
+  --data-row-bg-light-5: #dfd5ff;
+  --data-row-bg-light-6: #d0e5ff;
+}
+
+
 html { font-size: 16px; }
 
 
@@ -11,22 +28,22 @@ body {
     padding: 0;
     min-height: 100vh;
     position: relative;
-    background-color: white;
+    background-color: var(--background-colour-light);
 }
 .page-container {
     position:relative;
     min-height: 100;
 }
 header, footer {
-    background: #f9e784;
-    color: black;
+    background: var(--header-footer-background-light);
+    color: var(--text-light);
     padding: 1.25rem;
     text-align: center;
 }
 
 header {
     border-bottom: solid black;  /* */
-    box-shadow: 0px 5px 5px #522b47;
+    box-shadow: 0px 5px 5px var(--background-colour-light);
 }
 
 footer {
@@ -48,7 +65,7 @@ footer {
     flex: 1; /* This column takes up one share of space */
     max-width: 250px;
     color: black;
-    background-color: #f9e784; /* Light background for visibility */
+    background-color: var(--links-column-background-light); /* Light background for visibility */
     padding: 0.75rem 0.75rem 0px 0.75rem; /* t r b l Space between rows */
     margin: 1.25rem 0.75rem 1.25rem 1.25rem;
     border-radius: 5px;
@@ -87,44 +104,44 @@ footer {
     border-radius: 5px;
     border-style: solid;
     border-color:black;
-    box-shadow: 5px 5px 5px #522b47;
+    box-shadow: 5px 5px 5px var(--shadow-colour);
 }
 
 .data-row:nth-child(6n+1) {
-    background-color: #bdfffd;
+    background-color: var(--data-row-bg-light-1);
 }
 
 .data-row:nth-child(6n+2) {
-    background-color: #e0f0ff;
+    background-color: var(--data-row-bg-light-2);
 }
 
 .data-row:nth-child(6n+3) {
-    background-color: #e0c5ff;
+    background-color: var(--data-row-bg-light-3);
 }
 
 .data-row:nth-child(6n+4) {
-    background-color: #d4abef;
+    background-color: var(--data-row-bg-light-4);
 }
 
 .data-row:nth-child(6n+5) {
-    background-color: #dfd5ff;
+    background-color: var(--data-row-bg-light-5);
 }
 
 .data-row:nth-child(6n+6) {
-    background-color: #d0e5ff;
+    background-color: var(--data-row-bg-light-6);
 }
 
 button {
   border: 2px solid black;  
   border-radius: 5px;
-  background-color: #bdfffd;
+  background-color: var(--data-row-bg-light-1);
   padding: 5px 5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   margin: 0px 0px;
   cursor: pointer;
-  box-shadow: 5px 5px 5px #522b47;
+  box-shadow: 5px 5px 5px var(--shadow-colour);
 }
 
 .links-column button {
@@ -137,7 +154,7 @@ button {
   display: inline-block;
   margin: 0px 0px;
   cursor: pointer;
-  box-shadow: 3px 3px 3px #522b47;
+  box-shadow: 3px 3px 3px var(--shadow-colour);
 }
 
 
@@ -186,14 +203,10 @@ a:hover {
 
     .links-column {
         flex: 0; /* This column takes up one share of space */
-        background-color: #f9e784; /* Light background for visibility */
         padding: 0.75rem; /* t r b l Space between rows */
         margin: 0.75rem 0rem 0rem 0rem; /* only pad the top, because the bottom padding is handled by the padding on the bottom of the data rows*/
         border-radius: 5px;
         max-width: 100%;
-        border-style: solid;
-        border-color:black;
-        box-shadow: 5px 5px 5px #522b47;
         /*border-right: 2px solid #ccc; /* Optional border between columns */
     }
     .data-column {
@@ -206,13 +219,50 @@ a:hover {
 
     .data-row {
         padding: 0.75rem; /* t r b l Space between rows */
-        background-color: #bdfffd;
         margin: 1.25rem 0px 0px 0px;
-        border-radius: 5px;
-        border-style: solid;
-        border-color:black;
-        box-shadow: 5px 5px 5px #522b47;
         
     }
 
+}
+
+@media (prefers-color-scheme: dark) {
+  .data-row {
+      padding: 0.75rem 0.75rem 0.75rem 0.75rem; /* t r b l Space between rows */
+      background-color: darkgray;
+      /*border-bottom: 1px solid #ddd; /* Light border between rows */
+      margin: 1.25rem 0px 1.25rem 0.75rem;
+      border-radius: 5px;
+      border-style: solid;
+      box-shadow: 5px 5px 5px var(--shadow-colour);
+  }
+  
+  .data-row:nth-child(6n+1) {
+      border-color: var(--data-row-bg-light-1);
+      background-color: darkgray;
+  }
+  
+  .data-row:nth-child(6n+2) {
+      border-color: var(--data-row-bg-light-2);
+      background-color: darkgray;
+  }
+  
+  .data-row:nth-child(6n+3) {
+      border-color: var(--data-row-bg-light-3);
+      background-color: darkgray;
+  }
+  
+  .data-row:nth-child(6n+4) {
+      border-color: var(--data-row-bg-light-4);
+      background-color: darkgray;
+  }
+  
+  .data-row:nth-child(6n+5) {
+      border-color: var(--data-row-bg-light-5);
+      background-color: darkgray;
+  }
+  
+  .data-row:nth-child(6n+6) {
+      border-color: var(--data-row-bg-light-6);
+      background-color: darkgray;
+  }
 }

@@ -27,7 +27,8 @@
 #score-board {
   width: min(27rem, 92vw);
   aspect-ratio: 21 / 12.5;
-  height: auto;  margin: 1.25rem auto;
+  height: auto;  
+  margin: 1.25rem auto;
   background-color: skyblue;
   color: white;
   border: 12px solid lightblue;
