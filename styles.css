@@ -12,6 +12,7 @@
   --data-row-bg-light-4: #d4abef;
   --data-row-bg-light-5: #dfd5ff;
   --data-row-bg-light-6: #d0e5ff;
+  --data-row-bg-dark: #393D47;
 }
 
 
@@ -226,6 +227,10 @@ a:hover {
 }
 
 @media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--data-row-bg-dark);
+    color: white;
+  }
   .data-row {
       padding: 0.75rem 0.75rem 0.75rem 0.75rem; /* t r b l Space between rows */
       background-color: darkgray;
@@ -238,31 +243,31 @@ a:hover {
   
   .data-row:nth-child(6n+1) {
       border-color: var(--data-row-bg-light-1);
-      background-color: darkgray;
+      background-color: var(--data-row-bg-dark);
   }
   
   .data-row:nth-child(6n+2) {
       border-color: var(--data-row-bg-light-2);
-      background-color: darkgray;
+      background-color: var(--data-row-bg-dark);
   }
   
   .data-row:nth-child(6n+3) {
       border-color: var(--data-row-bg-light-3);
-      background-color: darkgray;
+      background-color: var(--data-row-bg-dark);
   }
   
   .data-row:nth-child(6n+4) {
       border-color: var(--data-row-bg-light-4);
-      background-color: darkgray;
+      background-color: var(--data-row-bg-dark);
   }
   
   .data-row:nth-child(6n+5) {
       border-color: var(--data-row-bg-light-5);
-      background-color: darkgray;
+      background-color: var(--data-row-bg-dark);
   }
   
   .data-row:nth-child(6n+6) {
       border-color: var(--data-row-bg-light-6);
-      background-color: darkgray;
+      background-color: var(--data-row-bg-dark);
   }
 }
